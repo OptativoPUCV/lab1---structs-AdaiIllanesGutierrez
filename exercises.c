@@ -41,13 +41,13 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   newSize=0;
-  int nuevoArr[10];
-  for(int i=0;i<size;i++){
-    if(arr[i]%2==0){
-      nuevoArr[i]=arr[i];
+  //int nuevoArr[10];
+  //for(int i=0;i<size;i++){
+    //if(arr[i]%2==0){
+     // nuevoArr[i]=arr[i];
       newSize++;
-    }
-  }
+   // }
+ // }
   return NULL; 
 }
 

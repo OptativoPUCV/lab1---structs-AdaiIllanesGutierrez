@@ -31,3 +31,9 @@ exercises.c:44:7: error: variable ‘nuevoArr’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 1644c9c
+Wed 13 Mar 2024 09:00:26 PM UTC: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+ tests:  0|4
+total_score: 30/70
+2ef89ec
