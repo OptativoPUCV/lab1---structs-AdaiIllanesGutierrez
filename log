@@ -135,3 +135,9 @@ Sat 16 Mar 2024 01:20:28 AM UTC:
  tests:  0|1
 total_score: 60/70
 cb2adb1
+Sat 16 Mar 2024 01:23:36 AM UTC: 
+ exercises.c | 18 +++++++-----------
+ 1 file changed, 7 insertions(+), 11 deletions(-)
+ tests:  0|1
+total_score: 60/70
+42c9148
