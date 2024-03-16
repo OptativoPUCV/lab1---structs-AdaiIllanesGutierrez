@@ -41,14 +41,22 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   newSize=0;
-  //int nuevoArr[10];
-  //for(int i=0;i<size;i++){
-    //if(arr[i]%2==0){
-     // nuevoArr[i]=arr[i];
-      newSize++;
-   // }
- // }
-  return NULL; 
+  int count = 0;
+  for (int i = 0; i < size; i++) {
+      if (arr[i] % 2 == 0) {
+          count++;
+      }
+  }
+  *newSize = count;
+  int *newArray = (int*)malloc(count * sizeof(int));
+
+  count = 0;
+  for (int i = 0; i < size; i++) {
+      if (arr[i] % 2 == 0) {
+          newArray[count++] = arr[i];
+      }
+  }
+  return newArray; 
 }
 
 /*
@@ -86,9 +94,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) { 
-  for (int i=0;i<size;i++){
-    
-  }
+  
   return -2; 
 }
 
