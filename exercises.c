@@ -47,8 +47,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
         newArray[(*newSize)++] = arr[i];
         
       }
-  }
-  return newArray; */
+  }*/
+  return newArray; 
 }
 
 /*
