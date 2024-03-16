@@ -48,3 +48,17 @@ Sat 16 Mar 2024 12:31:57 AM UTC:
  1 file changed, 16 insertions(+), 10 deletions(-)
  tests:  0|0
 48cabd0
+Sat 16 Mar 2024 12:38:05 AM UTC: 
+ exercises.c | 10 ++--------
+ 1 file changed, 2 insertions(+), 8 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:49:17: error: array subscript [-2305843009213693952, 2305843009213693951] is outside array bounds of ‘int[0]’ [-Werror=array-bounds]
+   49 |         newArray[(*newSize)++] = arr[i];
+      |         ~~~~~~~~^~~~~~~~~~~~~~
+exercises.c:46:25: note: referencing an object of size 0 allocated by ‘malloc’
+   46 |   int *newArray = (int*)malloc(count * sizeof(int));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d2a5431
